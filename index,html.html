@@ -1,0 +1,51 @@
+<!doctype>
+<html>
+<head>
+<link rel="stylesheet" href="cal.css">
+<meta name ="viewport" content="width=device-width,initial-scale=1.0">
+<title>calculator</title>
+</head>
+<body>
+<div class="container">																																																																																																																																																					
+  <div class="calculator">
+    <Form>
+       <div class="display">
+	     <input type="text" name="displa" placeholder="0">
+	   </div>
+	     <div>
+		   <input type="button" value="AC" onclick="displa.value =''">
+		    <input type="button" value="del" onclick="displa.value=displa.value.toString().slice(0,-1)">
+			 <input type="button" value="." onclick="displa.value+='.'">
+			  <input type="button" value="/" onclick="displa.value+='/'">
+		 </div>
+		 <div>
+		   <input type="button" value="7" onclick="displa.value+='7'">
+		    <input type="button" value="8" onclick="displa.value+='8'">
+			 <input type="button" value="9" onclick="displa.value+='9'">
+			  <input type="button" value="*" onclick="displa.value+='*'">
+		 </div>
+		 <div>
+		   <input type="button" value="4" onclick="displa.value+='4'">
+		    <input type="button" value="5" onclick="displa.value+='5'">
+			 <input type="button" value="6" onclick="displa.value+='6'">
+			  <input type="button" value="-" onclick="displa.value+='-'">
+		 </div>
+		 <div>
+		   <input type="button" value="1" onclick="displa.value+='1'">
+		    <input type="button" value="2" onclick="displa.value+='2'">
+			 <input type="button" value="3" onclick="displa.value+='3'">
+			  <input type="button" value="+" onclick="displa.value+='+'">
+		 </div>
+		  <div>
+		   <input type="button" value="0" onclick="displa.value+='0'">
+		    <input type="button" value="00" onclick="displa.value+='00'">
+		
+			  <input type="button" value="=" onclick="displa.value=eval(displa.value)">
+		   </div>
+    </Form>
+	 </div>
+  </div>
+</div>
+
+</body>
+</html>
